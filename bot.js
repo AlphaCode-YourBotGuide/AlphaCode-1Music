@@ -79,22 +79,7 @@ client.on('message', async msg =>{
 /////////////////////////
 ////////////////////////
 //////////////////////
-client.on('message', async msg => { 
-	if (msg.author.bot) return undefined;
-    if (!msg.content.startsWith(prefix)) return undefined;
-    
-    let args = msg.content.split(' ');
 
-	let command = msg.content.toLowerCase().split(" ")[0];
-	command = command.slice(prefix.length)
-if(command === "gif"){
-   var searchPromise = modSearchGif.searchForGif("spider");
-
-   searchPromise.then((gif) => {
-     msg.channel.send(gif);
-   })  
-}
-});
 /////////////////////////
 ////////////////////////
 //////////////////////
@@ -326,8 +311,6 @@ function play(guild, song) {
 	serverQueue.textChannel.send(`**${song.title}**, is now playing!`);
 }
 
-}
-});
 
 client.on('message', message => {
     if (message.content === 'help') {
@@ -350,7 +333,6 @@ client.on('message', message => {
 client.on('message', message => {
     if (message.content === 'general_commands') {
         let helpEmbed = new Discord.RichEmbed()
-        .setTitle('')
         .setTitle('**أوامر عامة...**')
         .addField('avatar', "افاتار الشخص المطلوب")
         .addField('gif', 'البحث عن جيف انت تطلبه')
