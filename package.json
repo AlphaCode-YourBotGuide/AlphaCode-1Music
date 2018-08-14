@@ -1,0 +1,26 @@
+{  
+    "name":"Alpha-code cool bot",
+    "version":"1.0.0",
+    "description":"",
+    "main":"bot.js",
+    "dependencies":{  
+        "discord.js":"^11.3.2",
+        "opusscript":"0.0.6",
+        "ffmpeg":"^0.0.4",
+        "get-youtube-id":"^1.0.0",
+        "node-gyp":"^3.7.0",
+        "rebuild":"^0.1.2",
+        "npm":"^6.3.0",
+        "simple-youtube-api":"^5.0.2",
+        "youtube-info":"^1.2.0",
+        "ytdl-core":"^0.21.1"
+    },
+    "devDependencies":{  
+
+    },
+    "scripts":{  
+        "test":"echo \"Error: no test specified\" && exit 1"
+    },
+    "author":"",
+    "license":"ISC"
+}
