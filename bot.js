@@ -8,6 +8,8 @@ const request = require('request');
 
 const fs = require('fs');
 
+const queue = new Map();
+
 const getYoutubeID = require('get-youtube-id');
 
 const fetchVideoInfo = require('youtube-info');
@@ -26,7 +28,6 @@ client.on('ready', function() {
 ////////////////////////
 //////////////////////
 var servers = [];
-var queue = [];
 var guilds = [];
 var queueNames = [];
 var isPlaying = false;
